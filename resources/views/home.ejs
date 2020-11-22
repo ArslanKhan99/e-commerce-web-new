@@ -1,1 +1,837 @@
-<h1> started </h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Shoopi</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Bootstrap eCommerce Template">
+    <meta name="author" content="SW-THEMES">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+<div class="page-wrapper">
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-left header-dropdowns">
+                        <div class="header-dropdown d-none d-lg-block">
+                            <a href="#" class="pl-0">ENG</a>
+                            <div class="header-menu">
+                                <ul>
+                                    <li><a href="#">ENG</a></li>
+                                    <li><a href="#">FRE</a></li>
+                                </ul>
+                            </div><!-- End .header-menu -->
+                        </div><!-- End .header-dropown -->
+
+                        <div class="header-dropdown d-none d-lg-block">
+                            <a href="#" class="pt-0">USD</a>
+                            <div class="header-menu">
+                                <ul>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </div><!-- End .header-menu -->
+                        </div><!-- End .header-dropown -->
+
+                        <a href="#" class="logo d-block d-lg-none">
+                            <img src="img/logo.png" alt="Porto Logo">
+                        </a>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right">
+                        <a href="#" class="header-icon"><i class="icon-user-2"></i></a>
+
+                        <div class="header-search d-lg-none d-block">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                            <div class="header-search-wrapper show">
+                                <form action="#" method="get">
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search..." required="">
+                                    <button class="btn" type="submit"><i class="icon-search"></i></button>
+                                </form>
+                            </div><!-- End .header-search-wrapper -->
+                        </div>
+
+                        <button class="mobile-menu-toggler d-lg-none d-block ml-4" type="button">
+                            <i class="icon-menu text-white"></i>
+                        </button>
+
+                        <a href="#" class="header-icon d-lg-block d-none"><i class="icon-wishlist-2"></i></a>
+
+                        <div class="dropdown cart-dropdown ml-lg-0 ml-3">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <i class="icon-shopping-cart"></i>
+
+                            </a>
+                        </div><!-- End .dropdown -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-top -->
+
+            <div class="header-middle d-lg-block d-none">
+                <div class="container d-block">
+                    <div class="header-left d-none d-lg-flex">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="Porto Logo">
+                        </a>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right d-lg-block d-flex">
+
+                        <button class="mobile-menu-toggler" type="button">
+                            <i class="icon-menu"></i>
+                        </button>
+
+                        <div class="header-search d-lg-block d-none">
+                            <a href="#" class="search-toggle d-lg-none d-inline-block" role="button"><i class="icon-search"></i></a>
+                            <div class="header-search-wrapper d-lg-flex position-relative">
+                                <form action="#" method="get">
+                                    <input type="search" class="form-control" name="q" id="qq" placeholder="Search..." required>
+                                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div><!-- End .header-search-wrapper -->
+                        </div><!-- End .header-search -->
+
+                        <nav class="main-nav">
+                            <ul class="menu  menu-vertical sf-arrows">
+                                <li class="active border-0"><a href="#">HOME</a></li>
+                                <li class="border-0">
+                                    <a href="#" class=" border-0">CATEGORIES</a>
+                                </li>
+                                <li class="megamenu-container border-0">
+                                    <a href="#" class=" border-0">PRODUCTS</a>
+                                </li>
+                                <li class="border-0"><a href="#" class=" border-0">FEATURES</a>
+                                </li>
+                                <li class="border-0"><a href="#" class="border-0">ABOUT US</a></li>
+                                <li class="border-0"><a href="#" class="login-link border-0">LOG IN</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-middle -->
+
+            <div class="header-bottom d-none d-lg-block text-align-center position-absolute">
+                <div class="container d-block text-center">
+                    <div class="header-left d-block">
+                        <h6 class="mb-0">CALL US NOW</h6>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right d-block">
+                        <div class="header-contact">
+                            <a href="tel:#"><%=phone%></a>
+                        </div><!-- End .header-contact -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+
+                <div class="social-icons text-center">
+                    <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+                </div><!-- End .social-icons -->
+            </div><!-- End .header-bottom -->
+
+        </div><!-- End .header-wrapper -->
+    </header><!-- End .header -->
+
+    <main class="main">
+
+        <section class="section-1">
+            <h2 class="d-none">Home Slider</h2>
+
+            <div class="home-slider owl-carousel owl-theme show-nav-hover" data-owl-options="{
+						'loop': false
+					}">
+
+                <div class="banner">
+                    <img src="img/slider/slide-1.jpg" width="1632" height="980" alt="slider-one">
+
+                    <div class="banner-layer banner-layer-middle">
+                        <h6>NEW ARRIVALS!</h6>
+                        <img src="img/banners/banner-text-1.png" class="w-auto" width="503" height="113" alt="banner-text">
+                        <h3>
+                            <%= discount1 %>% OFF
+                        </h3>
+                        <a href="#" class="btn btn-xl" role="button">Shop Now<i class="fas fa-chevron-right"></i></a>
+                    </div><!-- End .banner-layer.banner-layer-middle -->
+                </div><!-- End .banner -->
+
+                <div class="banner text-right">
+                    <img src="img/slider/slide-2.jpg" width="1620" height="980" alt="slider-two">
+
+                    <div class="banner-layer banner-layer-middle content-right">
+                        <h6>NEW ARRIVALS!</h6>
+                        <img src="img/banners/banner-text-2.png" class="w-auto ml-auto" width="503" height="113" alt="banner-text">
+                        <h3>
+                            <%= discount2 %>% OFF
+                        </h3>
+                        <a href="#" class="btn btn-xl" role="button">Shop Now<i class="fas fa-chevron-right"></i></a>
+                    </div><!-- End .banner-layer.banner-layer-middle -->
+                </div>
+            </div>
+        </section><!-- End .section-1 -->
+
+        <section class="section-2 featured-collection mt-5">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+
+                <div class="products-grid grid">
+                    <div class="product-default grid-item inner-quickview inner-icon inner-icon-inline overlay-dark grid-height-2 col-xl-5 col-lg-6 col-md-6">
+                        <figure>
+                            <a href="#">
+                                <img src="<%= featured_products[0].imageUrl%>" class="h-100" alt="desc" height="720" width="720">
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <a href="#" class="btn-icon btn-icon-wish"><i class="icon-heart"></i></a>
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i></button>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">
+                                        <%= featured_products[0].type%>
+                                    </a>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                <a href="#">
+                                    <%= featured_products[0].name%>
+                                </a>
+                            </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+                            <div class="price-box">
+								<span class="product-price">
+									<%= featured_products[0].price%>
+								</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
+
+                    <div class="product-default grid-item inner-quickview inner-icon inner-icon-inline overlay-dark grid-height-2 col-xl-3 col-lg-6 col-sm-6">
+                        <figure>
+                            <a href="#">
+                                <img src="<%=featured_products[1].imageUrl%>" class="h-100" height="490" width="366" alt="desc">
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <a href="#" class="btn-icon btn-icon-wish"><i class="icon-heart"></i></a>
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i></button>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category"><%=featured_products[1].type%></a>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                <a href="#"><%=featured_products[1].name%></a>
+                            </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+                            <div class="price-box">
+                                <span class="product-price"><%=featured_products[1].price%></span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
+
+                    <div class="product-default grid-item inner-quickview inner-icon inner-icon-inline overlay-dark grid-height-1 col-xl-2 col-md-3 col-sm-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/grid/product-3.jpg" class="h-100" alt="desc" width="231" height="231">
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <a href="#" class="btn-icon btn-icon-wish"><i class="icon-heart"></i></a>
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i></button>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">Women</a>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                <a href="#">Man Belt</a>
+                            </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+                            <div class="price-box">
+                                <span class="product-price">$48.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
+
+                    <div class="product-default grid-item inner-quickview inner-icon inner-icon-inline overlay-dark grid-height-1 col-xl-2 col-md-3 col-sm-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/grid/product-4.jpg" class="h-100" alt="desc" width="231" height="231">
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <a href="#" class="btn-icon btn-icon-wish"><i class="icon-heart"></i></a>
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i></button>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">Women</a>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                <a href="#">Double Belt</a>
+                            </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+                            <div class="price-box">
+                                <span class="product-price">$48.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
+
+                    <div class="product-default grid-item inner-quickview inner-icon inner-icon-inline overlay-dark grid-height-1 col-xl-2 col-md-3 col-sm-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/grid/product-5.jpg" class="h-100" alt="desc" width="231" height="231">
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <a href="#" class="btn-icon btn-icon-wish"><i class="icon-heart"></i></a>
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i></button>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">Women</a>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                <a href="#">Woman Bag</a>
+                            </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+                            <div class="price-box">
+                                <span class="product-price">$48.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
+
+                    <div class="product-default grid-item inner-quickview inner-icon inner-icon-inline overlay-dark grid-height-1 col-xl-2 col-md-3 col-sm-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-6.jpg" class="h-100" alt="desc" width="231" height="231">
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <a href="#" class="btn-icon btn-icon-wish"><i class="icon-heart"></i></a>
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i></button>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">Women</a>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                <a href="#">Man Shoes</a>
+                            </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+                            <div class="price-box">
+                                <span class="product-price">$416.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
+
+                    <div class="grid-col-sizer col-1"></div>
+                </div>
+            </div>
+        </section><!-- End .section-2 -->
+
+        <section class="section-5 product-collection">
+            <div class="container">
+                <h2 class="section-title">POPULAR PRODUCTS</h2>
+
+                <div class="row product-ajax-grid">
+                    <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-12.jpg" alt="product" width="400" height="400" />
+                                <img src="img/products/home/product-12-2.jpg" alt="product" width="400" height="400" />
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
+                            </div>
+
+                            <div class="label-group">
+                                <span class="product-label label-hot">HOT</span>
+                            </div>
+                        </figure>
+
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">SHOES</a>,
+                                    <a href="#" class="product-category">TOYS</a>
+                                </div>
+
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
+                            </div>
+
+                            <h2 class="product-title">
+                                <a href="#">Lucky Bag</a>
+                            </h2>
+
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+
+                            <div class="price-box">
+                                <span class="product-price">$299.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div><!-- End .product-default -->
+
+                    <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-7.jpg" alt="product" width="400" height="400" />
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
+                            </div>
+
+                            <div class="label-group">
+                                <span class="product-label label-sale">-15%</span>
+                            </div>
+                        </figure>
+
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">SHOES</a>,
+                                    <a href="#" class="product-category">TOYS</a>
+                                </div>
+
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
+                            </div>
+
+                            <h2 class="product-title">
+                                <a href="#">Men Shoes</a>
+                            </h2>
+
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+
+                            <div class="price-box">
+                                <span class="old-price">$1,999.00</span>
+                                <span class="product-price">$1,699.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div><!-- End .product-default -->
+
+                    <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-8.jpg" alt="product" width="400" height="400" />
+                                <img src="img/products/home/product-7.jpg" alt="product" width="400" height="400" />
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
+                            </div>
+                        </figure>
+
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">SHOES</a>,
+                                    <a href="#" class="product-category">TOYS</a>
+                                </div>
+
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
+                            </div>
+
+                            <h2 class="product-title">
+                                <a href="#">Porto Sports Shoes</a>
+                            </h2>
+
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+
+                            <div class="price-box">
+                                <span class="product-price">$101.00 - $111.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div><!-- End .product-default -->
+
+                    <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-9.jpg" alt="product" width="400" height="400" />
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
+                            </div>
+
+                        </figure>
+
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">DRESS</a>,
+                                    <a href="#" class="product-category">SHOES</a>
+                                </div>
+
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
+                            </div>
+
+                            <h2 class="product-title">
+                                <a href="#">Men's Quartz</a>
+                            </h2>
+
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+
+                            <div class="price-box">
+                                <span class="product-price">$299.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div><!-- End .product-default -->
+
+                    <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-10.jpg" alt="product" width="400" height="400" />
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
+                            </div>
+
+                            <div class="label-group">
+                                <span class="product-label label-hot">HOT</span>
+                            </div>
+
+                        </figure>
+
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">HEADPHONE</a>,
+                                    <a href="#" class="product-category">WATCHES</a>
+                                </div>
+
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
+                            </div>
+
+                            <h2 class="product-title">
+                                <a href="#">Men's Belt</a>
+                            </h2>
+
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+
+                            <div class="price-box">
+                                <span class="product-price">$299.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div><!-- End .product-default -->
+
+                    <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
+                        <figure>
+                            <a href="#">
+                                <img src="img/products/home/product-11.jpg" alt="product" width="400" height="400" />
+                            </a>
+
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
+                            </div>
+
+                            <div class="label-group">
+                                <span class="product-label label-hot">HOT</span>
+                            </div>
+
+                        </figure>
+
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category">DRESS</a>,
+                                    <a href="#" class="product-category">T-SHIRTS</a>
+                                </div>
+
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
+                            </div>
+
+                            <h2 class="product-title">
+                                <a href="#">Black Watch</a>
+                            </h2>
+
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
+
+                            <div class="price-box">
+                                <span class="product-price">$89.00</span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div><!-- End .product-default -->
+                </div><!-- End .row -->
+
+                <div class="load-more text-center loadmore">
+                    <a href="#" class="btn btn-xl loadmore" role="button">LOAD MORE...</a>
+                </div>
+            </div>
+        </section><!-- End .section-5 -->
+    </main><!-- End .main -->
+
+    <footer class="footer">
+
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mb-2 mb-md-0">
+                        <div class="widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <ul class="contact-info">
+                                <li>
+                                    <span class="contact-info-label">Address:</span>hassan leyla sokak no.34 Gemikonagi Lefke North Cyprus
+                                </li>
+                                <li>
+                                    <span class="contact-info-label">Phone:</span><a href="#"><%=phone%></a>
+                                </li>
+                                <li>
+                                    <span class="contact-info-label">Email:</span> <a href="#">hhn164393@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span class="contact-info-label">Working Days/Hours:</span>
+                                   24/7 Mon - Sat
+                                </li>
+                            </ul>
+                            <div class="social-icons mb-3 mb-lg-0">
+                                <a href="#" class="social-icon social-facebook icon-facebook" target="_blank" title="Facebook"></a>
+                                <a href="#" class="social-icon social-twitter icon-twitter" target="_blank" title="Twitter"></a>
+                                <a href="#" class="social-icon social-instagram icon-instagram" target="_blank" title="Instagram"></a>
+                            </div><!-- End .social-icons -->
+                        </div><!-- End .widget -->
+                    </div><!-- End .col-lg-3 -->
+
+                    <div class="col-lg-9">
+                        <div class="widget widget-newsletter d-md-flex d-block">
+                        </div><!-- End .widget -->
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="widget">
+                                    <h4 class="widget-title">Customer Service</h4>
+
+                                    <div class="links link-parts row mb-sm-0 mb-3">
+                                        <ul class="link-part col-sm-6 mb-sm-0 mb-1">
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Contact us</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                        </ul>
+
+                                        <ul class="link-part col-sm-6 mb-0">
+                                            <li><a href="#">Order history</a></li>
+                                            <li><a href="#">Advanced search</a></li>
+                                            <li><a href="#" class="login-link">Login</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End .widget -->
+                            </div><!-- End .col-sm-6 -->
+
+                            <div class="col-sm-7">
+                                <div class="widget">
+                                    <h4 class="widget-title">About Us</h4>
+
+                                </div><!-- End .widget -->
+                            </div><!-- End .col-sm-6 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .col-lg-9 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End .footer-middle -->
+    </footer>
+</div><!-- End .page-wrapper -->
+
+<div class="mobile-menu-overlay"></div><!-- End .mobil-menu-overlay -->
+
+<div class="mobile-menu-container">
+    <div class="mobile-menu-wrapper">
+        <span class="mobile-menu-close"><i class="icon-cancel"></i></span>
+        <nav class="mobile-nav">
+            <ul class="mobile-menu">
+                <li class="border-0">
+                    <a href="#">USD</a>
+                    <ul>
+                        <li><a href="#">USD</a></li>
+                        <li><a href="#">EUR</a></li>
+                    </ul>
+                </li>
+                <li class="border-0 mb-2">
+                    <a href="#">ENGLISH</a>
+                    <ul>
+                        <li><a href="#">ENGLISH</a></li>
+                        <li><a href="#">FRENCH</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul>
+                        <li>
+                            <a href="#">Variations</a>
+                            <ul>
+                                <li><a href="#">Horizontal Thumbnails</a></li>
+                                <li><a href="#">Vertical Thumbnails<span class="tip tip-hot">Hot!</span></a></li>
+                                <li><a href="#">Inner Zoom</a></li>
+                                <li><a href="#">Addtocart Sticky</a></li>
+                                <li><a href="#">Accordion Tabs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Variations</a>
+                            <ul>
+                                <li><a href="#">Sticky Tabs</a></li>
+                                <li><a href="#">Simple Product</a></li>
+                                <li><a href="#">With Left Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Product Layout Types</a>
+                            <ul>
+                                <li><a href="#">Default Layout</a></li>
+                                <li><a href="#">Extended Layout</a></li>
+                                <li><a href="#">Full Width Layout</a></li>
+                                <li><a href="#">Grid Images Layout</a></li>
+                                <li><a href="#">Sticky Both Side Info<span class="tip tip-hot">Hot!</span></a></li>
+                                <li><a href="#">Sticky Right Side Info</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                    <ul>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li>
+                            <a href="#">Checkout</a>
+                            <ul>
+                                <li><a href="#">Checkout Shipping</a></li>
+                                <li><a href="#">Checkout Shipping 2</a></li>
+                                <li><a href="#">Checkout Review</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#" class="login-link">Login</a></li>
+                        <li><a href="#">Forgot Password</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a>
+                    <ul>
+                        <li><a href="#">Blog Post</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">ELEMENTS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">LOG IN</a></li>
+            </ul>
+        </nav><!-- End .mobile-nav -->
+
+        <div class="social-icons d-flex">
+            <a href="#" class="social-icon mr-3" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="#" class="social-icon mr-3" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+        </div><!-- End .social-icons -->
+    </div><!-- End .mobile-menu-wrapper -->
+</div><!-- End .mobile-menu-container -->
+
+
+<a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
+
+<!-- Plugins JS File-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/optional/isotope.pkgd.min.js"></script>
+<script src="js/jquery.appear.min.js"></script>
+
+<!-- Main JS File -->
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
