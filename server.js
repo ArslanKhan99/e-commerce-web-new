@@ -15,6 +15,11 @@ app.use('/img',express.static(__dirname+'public/img'))
 
 const path= require ('path')
 
+app.use(expressLayout)
+app.set('views',path.join(__dirname,'/resources/views'))
+
+app.set('view engine' , 'ejs')
+
 app.get('/' , (req,res) =>{
         res.render('home',{
             phone:'+92 302 4082569',
@@ -42,11 +47,12 @@ app.get('/' , (req,res) =>{
     }
 )
 
+app.get('/login',(req,res)=>
+{
+    res.render('login',{
+    phone:'+92 302 4082569'})
+})
 
-app.use(expressLayout)
-app.set('views',path.join(__dirname,'/resources/views'))
-
-app.set('view engine' , 'ejs')
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}` )
