@@ -244,254 +244,57 @@
             <h2 class="section-title">POPULAR PRODUCTS</h2>
 
             <div class="row product-ajax-grid">
-                <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
-                    <figure>
-                        <a href="#">
-                            <img src="img/products/home/product-12.jpg" alt="product" width="400" height="400" />
-                            <img src="img/products/home/product-12-2.jpg" alt="product" width="400" height="400" />
-                        </a>
 
-                        <div class="btn-icon-group">
-                            <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
-                        </div>
 
-                        <div class="label-group">
-                            <span class="product-label label-hot">HOT</span>
-                        </div>
-                    </figure>
 
-                    <div class="product-details">
-                        <div class="category-wrap">
-                            <div class="category-list">
-                                <a href="#" class="product-category">SHOES</a>,
-                                <a href="#" class="product-category">TOYS</a>
-                            </div>
-
-                            <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-                        </div>
-
-                        <h2 class="product-title">
-                            <a href="#">Lucky Bag</a>
-                        </h2>
-
-                        <div class="ratings-container">
-                            <div class="product-ratings">
-                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-
-                            </div><!-- End .product-ratings -->
-                        </div><!-- End .product-container -->
-
-                        <div class="price-box">
-                            <span class="product-price">$299.00</span>
-                        </div><!-- End .price-box -->
-                    </div><!-- End .product-details -->
-                </div><!-- End .product-default -->
+                <% for(var i = 0; i <no_of_products; i++) {%>
 
                 <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
-                    <figure>
-                        <a href="#">
-                            <img src="img/products/home/product-7.jpg" alt="product" width="400" height="400" />
-                        </a>
+                        <figure>
+                            <a href="#">
+                                <img src="<%=popular_products[i].images[0].url%>" alt="product" width="400" height="400"/>
+                                <img src="<%=popular_products[i].images[1].url%>" alt="product" width="400" height="400" />
+                            </a>
 
-                        <div class="btn-icon-group">
-                            <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
-                        </div>
-
-                        <div class="label-group">
-                            <span class="product-label label-sale">-15%</span>
-                        </div>
-                    </figure>
-
-                    <div class="product-details">
-                        <div class="category-wrap">
-                            <div class="category-list">
-                                <a href="#" class="product-category">SHOES</a>,
-                                <a href="#" class="product-category">TOYS</a>
+                            <div class="btn-icon-group">
+                                <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
                             </div>
 
-                            <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-                        </div>
+                            <div class="label-group">
+                                <span class="product-label label-hot"><%=popular_products[i].label%></span>
+                            </div>
+                        </figure>
 
-                        <h2 class="product-title">
-                            <a href="#">Men Shoes</a>
-                        </h2>
+                        <div class="product-details">
+                            <div class="category-wrap">
+                                <div class="category-list">
+                                    <a href="#" class="product-category"><%=popular_products[i].category%></a>,
+                                    <a href="#" class="product-category"><%=popular_products[i].sub_category%></a>
+                                </div>
 
-                        <div class="ratings-container">
-                            <div class="product-ratings">
-                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-
-                            </div><!-- End .product-ratings -->
-                        </div><!-- End .product-container -->
-
-                        <div class="price-box">
-                            <span class="old-price">$1,999.00</span>
-                            <span class="product-price">$1,699.00</span>
-                        </div><!-- End .price-box -->
-                    </div><!-- End .product-details -->
-                </div><!-- End .product-default -->
-
-                <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
-                    <figure>
-                        <a href="#">
-                            <img src="img/products/home/product-8.jpg" alt="product" width="400" height="400" />
-                            <img src="img/products/home/product-7.jpg" alt="product" width="400" height="400" />
-                        </a>
-
-                        <div class="btn-icon-group">
-                            <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
-                        </div>
-                    </figure>
-
-                    <div class="product-details">
-                        <div class="category-wrap">
-                            <div class="category-list">
-                                <a href="#" class="product-category">SHOES</a>,
-                                <a href="#" class="product-category">TOYS</a>
+                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
                             </div>
 
-                            <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-                        </div>
+                            <h2 class="product-title">
+                                <a href="#"><%=popular_products[i].name%></a>
+                            </h2>
 
-                        <h2 class="product-title">
-                            <a href="#">Porto Sports Shoes</a>
-                        </h2>
+                            <div class="ratings-container">
+                                <div class="product-ratings">
+                                    <span class="ratings" style="width:0%"></span><!-- End .ratings -->
 
-                        <div class="ratings-container">
-                            <div class="product-ratings">
-                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
+                                </div><!-- End .product-ratings -->
+                            </div><!-- End .product-container -->
 
-                            </div><!-- End .product-ratings -->
-                        </div><!-- End .product-container -->
+                            <div class="price-box">
+                                <span class="product-price">$<%=popular_products[i].price%></span>
+                            </div><!-- End .price-box -->
+                        </div><!-- End .product-details -->
+                    </div>
 
-                        <div class="price-box">
-                            <span class="product-price">$101.00 - $111.00</span>
-                        </div><!-- End .price-box -->
-                    </div><!-- End .product-details -->
-                </div><!-- End .product-default -->
+                <%}%>
 
-                <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
-                    <figure>
-                        <a href="#">
-                            <img src="img/products/home/product-9.jpg" alt="product" width="400" height="400" />
-                        </a>
 
-                        <div class="btn-icon-group">
-                            <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
-                        </div>
-
-                    </figure>
-
-                    <div class="product-details">
-                        <div class="category-wrap">
-                            <div class="category-list">
-                                <a href="#" class="product-category">DRESS</a>,
-                                <a href="#" class="product-category">SHOES</a>
-                            </div>
-
-                            <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-                        </div>
-
-                        <h2 class="product-title">
-                            <a href="#">Men's Quartz</a>
-                        </h2>
-
-                        <div class="ratings-container">
-                            <div class="product-ratings">
-                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-
-                            </div><!-- End .product-ratings -->
-                        </div><!-- End .product-container -->
-
-                        <div class="price-box">
-                            <span class="product-price">$299.00</span>
-                        </div><!-- End .price-box -->
-                    </div><!-- End .product-details -->
-                </div><!-- End .product-default -->
-
-                <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
-                    <figure>
-                        <a href="#">
-                            <img src="img/products/home/product-10.jpg" alt="product" width="400" height="400" />
-                        </a>
-
-                        <div class="btn-icon-group">
-                            <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
-                        </div>
-
-                        <div class="label-group">
-                            <span class="product-label label-hot">HOT</span>
-                        </div>
-
-                    </figure>
-
-                    <div class="product-details">
-                        <div class="category-wrap">
-                            <div class="category-list">
-                                <a href="#" class="product-category">HEADPHONE</a>,
-                                <a href="#" class="product-category">WATCHES</a>
-                            </div>
-
-                            <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-                        </div>
-
-                        <h2 class="product-title">
-                            <a href="#">Men's Belt</a>
-                        </h2>
-
-                        <div class="ratings-container">
-                            <div class="product-ratings">
-                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-
-                            </div><!-- End .product-ratings -->
-                        </div><!-- End .product-container -->
-
-                        <div class="price-box">
-                            <span class="product-price">$299.00</span>
-                        </div><!-- End .price-box -->
-                    </div><!-- End .product-details -->
-                </div><!-- End .product-default -->
-
-                <div class="product-default inner-quickview inner-icon col-xl-2 col-md-3 col-sm-4 col-6">
-                    <figure>
-                        <a href="#">
-                            <img src="img/products/home/product-11.jpg" alt="product" width="400" height="400" />
-                        </a>
-
-                        <div class="btn-icon-group">
-                            <button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-bag"></i></button>
-                        </div>
-
-                        <div class="label-group">
-                            <span class="product-label label-hot">HOT</span>
-                        </div>
-
-                    </figure>
-
-                    <div class="product-details">
-                        <div class="category-wrap">
-                            <div class="category-list">
-                                <a href="#" class="product-category">DRESS</a>,
-                                <a href="#" class="product-category">T-SHIRTS</a>
-                            </div>
-
-                            <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-                        </div>
-
-                        <h2 class="product-title">
-                            <a href="#">Black Watch</a>
-                        </h2>
-
-                        <div class="ratings-container">
-                            <div class="product-ratings">
-                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                            </div><!-- End .product-ratings -->
-                        </div><!-- End .product-container -->
-
-                        <div class="price-box">
-                            <span class="product-price">$89.00</span>
-                        </div><!-- End .price-box -->
-                    </div><!-- End .product-details -->
-                </div><!-- End .product-default -->
             </div><!-- End .row -->
 
             <div class="load-more text-center loadmore">

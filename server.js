@@ -9,8 +9,9 @@ const PORT= process.env.PORT || 3000
 
 app.use(express.static('public'))
 app.use('/css',express.static(__dirname+'public/css'))
-app.use('/js',express.static(__dirname+'public/js'))
 app.use('/img',express.static(__dirname+'public/img'))
+app.use(express.static('resources'))
+app.use('/js',express.static(__dirname+'resources/js'))
 
 
 const path= require ('path')
@@ -25,7 +26,7 @@ app.get('/' , (req,res) =>{
             phone:'+92 302 4082569',
             discount1:'10',
             discount2:'40',
-
+            no_of_products: 6,
             featured_products:[
                 {
                     type:"Men",
@@ -41,6 +42,111 @@ app.get('/' , (req,res) =>{
                     price:"$800.00",
                     imageUrl:"https://i.ibb.co/qRJkBHw/Ayeza-9-1.jpg"
                 }
+            ],
+            popular_products:[
+                {
+                    label: "HOT",
+                    category:"SHOES",
+                    sub_category: "JOGGERS",
+                    name: "PLIMSOLL",
+                    rating: "4",
+                    price: "199",
+                    images: [
+                        {
+                            url:"https://i.ibb.co/Y7DWhjp/images-1.jpg"
+                        },
+                        {
+                            url:"https://i.ibb.co/5WPvDYX/images.jpg"
+                        }
+                    ]
+
+                },
+                {
+                    label: "save",
+                    category:"BAGS",
+                    sub_category: "shoulder bag",
+                    name: "gold chain",
+                    rating: "3.7",
+                    price: "99",
+                    images: [
+                        {
+                            url:"https://i.ibb.co/Lz9vNYC/images-2.jpg"
+                        },
+                        {
+                            url:"https://i.ibb.co/kHFMkSx/images-3.jpg"
+                        }
+                    ]
+
+                },
+                {
+                    label: "Hot",
+                    category:"WATCHES",
+                    sub_category: "Men",
+                    name: "Black step",
+                    rating: "4.5",
+                    price: "150",
+                    images: [
+                        {
+                            url:"https://i.ibb.co/DRWRqfT/images-4.jpg"
+                        },
+                        {
+                            url:"https://i.ibb.co/ZzGKFHT/50239603-SM-13-f.jpg"
+                        }
+                    ]
+
+                },
+                {
+                    label: "New",
+                    category:"LAPTOP",
+                    sub_category: "Mac",
+                    name: "Mac 2020 256",
+                    rating: "4.7",
+                    price: "1500",
+                    images: [
+                        {
+                            url:"https://i.ibb.co/0hZgq0q/Security-Mac-OS-1139417587.jpg"
+                        },
+                        {
+                            url:"https://i.ibb.co/nCBY3S2/20200623-Pixabay-MAC-apple-3144237-1920.jpg"
+                        }
+                    ]
+
+                },
+                {
+                    label: "new",
+                    category:"ACCESSORY",
+                    sub_category: "Mouse",
+                    name: "techno",
+                    rating: "3.7",
+                    price: "50",
+                    images: [
+                        {
+                            url:"https://i.ibb.co/WxPXyJ1/asus-rog-spatha.jpg"
+                        },
+                        {
+                            url:"https://i.ibb.co/mbx0gkp/images-5.jpg"
+                        }
+                    ]
+
+                },
+                {
+                    label: "sale",
+                    category:"MOBILES",
+                    sub_category: "Samsung",
+                    name: "Note 10",
+                    rating: "3.7",
+                    price: "150",
+                    images: [
+                        {
+                            url:"https://i.ibb.co/jwpZbWB/D1-Aura-White-front-w-pen-23729.jpg"
+                        },
+                        {
+                            url:"https://i.ibb.co/KXN5Ft7/download.jpg"
+                        }
+                    ]
+
+                },
+
             ]
 
         })
