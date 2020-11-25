@@ -102,7 +102,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     initialised: !1,
     mobile: !1,
     init: function init() {
-      this.initialised || (this.initialised = !0, this.checkMobile(), this.stickyHeader(), this.mMenuIcons(), this.mMenuToggle(), this.mobileMenu(), this.scrollToTop(), this.quantityInputs(), this.countTo(), this.tooltip(), this.popover(), this.changePassToggle(), this.changeBillToggle(), this.catAccordion(), this.ajaxLoadProduct(), this.toggleFilter(), this.toggleSidebar(), this.productTabSroll(), this.scrollToElement(), this.loginPopup(), this.modalView(), this.productManage(), this.ratingTooltip(), this.windowClick(), this.popupMenu(), this.headerSearchToggle(), this.parallax(), this.appearAnimate(), e.fn.isotope && this.isotopes(), e.fn.superfish && this.menuInit(), e.fn.owlCarousel && this.owlCarousels(), "object" == (typeof noUiSlider === "undefined" ? "undefined" : _typeof(noUiSlider)) && this.filterSlider(), e.fn.themeSticky && this.stickySidebar(), e.fn.magnificPopup && this.lightBox(), e.fn.Morphext && this.wordRotate());
+      this.initialised || (this.initialised = !0, this.checkMobile(), this.stickyHeader(), this.mMenuIcons(), this.mMenuToggle(), this.mobileMenu(), this.scrollToTop(), this.quantityInputs(), this.countTo(), this.tooltip(), this.popover(), this.changePassToggle(), this.changeBillToggle(), this.catAccordion(), this.ajaxLoadProduct(), this.toggleFilter(), this.toggleSidebar(), this.productTabSroll(), this.scrollToElement(), this.loginPopup(), this.modalView(), this.productManage(), this.ratingTooltip(), this.windowClick(), this.popupMenu(), this.headerSearchToggle(), this.parallax(), this.appearMap(), this.appearAnimate(), e.fn.isotope && this.isotopes(), e.fn.superfish && this.menuInit(), e.fn.owlCarousel && this.owlCarousels(), "object" == (typeof noUiSlider === "undefined" ? "undefined" : _typeof(noUiSlider)) && this.filterSlider(), e.fn.themeSticky && this.stickySidebar(), e.fn.magnificPopup && this.lightBox(), e.fn.Morphext && this.wordRotate());
     },
     checkMobile: function checkMobile() {
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? this.mobile = !0 : this.mobile = !1;
@@ -830,6 +830,18 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           e(window).on("scroll resize", p), p();
         } else i.addClass("parallax-disabled");
       });
+    },
+    appearMap: function appearMap() {
+      function initialize() {
+        var mapProp = {
+          center: new google.maps.LatLng(51.508742, -0.120850),
+          zoom: 5,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
     },
     appearAnimate: function appearAnimate() {
       if (e.fn.appear) {

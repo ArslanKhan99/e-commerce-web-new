@@ -32,6 +32,7 @@
                 this.popupMenu(),
                 this.headerSearchToggle(),
                 this.parallax(),
+                this.appearMap(),
                 this.appearAnimate(),
             e.fn.isotope && this.isotopes(),
             e.fn.superfish && this.menuInit(),
@@ -1077,6 +1078,18 @@
                     e(window).on("scroll resize", p), p();
                 } else i.addClass("parallax-disabled");
             });
+        },
+
+        appearMap:function(){
+            function initialize() {
+                var mapProp = {
+                    center:new google.maps.LatLng(31.523083,74.306576),
+                    zoom:15,
+                    mapTypeId:google.maps.MapTypeId.ROADMAP
+                };
+                var map=new google.maps.Map(document.getElementById("map"), mapProp);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
         },
         appearAnimate: function () {
             if (e.fn.appear) {
