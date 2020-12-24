@@ -1,0 +1,46 @@
+<main class="main">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/"><i class="icon-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add Products</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading">
+                    <h2 class="title">Add New Products</h2>
+                </div><!-- End .heading -->
+
+                <form action="/add-product-server" method="post" enctype="multipart/form-data">
+                    <input name="productName" type="text" class="form-control" placeholder="Product Name" required>
+                    <input name="productPrice" type="number" class="form-control" placeholder="Price" required>
+                    <input name="productDescription" type="text" class="form-control" placeholder="Description" required>
+                    <input name="type" type="text" class="form-control" placeholder="Type" required>
+                    <input name="label" type="text" class="form-control" placeholder="Label" required>
+                    <input name="discount" type="number" class="form-control" placeholder="Discount" required>
+                    <input name="firstImage" type="file" class="form-control" placeholder="Image" required>
+                    <input name="secondImage" type="file" class="form-control" placeholder="Image" required>
+
+                    <div class="custom-control custom-checkbox">
+                        <input name="isFeatured" type="checkbox" class="custom-control-input" id="isFeatured">
+                        <label class="custom-control-label" for="isFeatured">Featured</label>
+                    </div><!-- End .custom-checkbox -->
+
+
+                    <div class="custom-control custom-checkbox">
+                        <input name="isPopular" type="checkbox" class="custom-control-input" id="isPopular">
+                        <label class="custom-control-label" for="isPopular">Popular</label>
+                    </div><!-- End .custom-checkbox -->
+
+                    <div class="form-footer">
+                        <button id="btn-add-product" type="submit" class="btn btn-primary">Add</button>
+                    </div><!-- End .form-footer -->
+                </form>
+            </div><!-- End .col-md-6 -->
+        </div><!-- End .row -->
+    </div><!-- End .container -->
+</main><!-- End .main -->
